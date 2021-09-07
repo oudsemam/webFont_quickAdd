@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <name> (Google Web Font)</name>
+        <source>var m2mThemeInclude = new GlideRecord('m</source>
+        <sp_css/>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-03 14:05:27</sys_created_on>
+        <sys_id>c2b605fa2f123010ec275e072799b669</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> (Google Web Font)</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>sp_css_include_c2b605fa2f123010ec275e072799b669</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-03 14:05:27</sys_updated_on>
+        <url>var m2mThemeInclude = new GlideRecord('m2m_sp_theme_css_include'); m2mThemeInclude.initialize(); m2mThemeInclude.sp_css_include = spIncludeGRID; m2mThemeInclude.sp_theme = theme; m2mThemeInclude.url = inputUrl; m2mThemeInclude.order = 10; var m2mThemeIncludeID = m2mThemeInclude.insert();</url>
+    </sp_css_include>
+</record_update>

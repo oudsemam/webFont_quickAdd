@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_669416_imp_url.insert_webfont_url</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>insert_webfont_url</name>
+        <script><![CDATA[(function(inserted_url, portalID) {
+ 
+		//	var table = applicable_tble;
+		//	var table = portalID.themeRecord.cssInclude.stylesheet;
+	
+	
+		// define a variable to the sys_id of the page you want to add your css dependency to
+			var pageID = $sp.getParameter('sys_id'); 
+		// define a variable to get to the record you will add the webfont url to 
+			var table = portalID.pageID.themeRecord;
+		// define a gliderecord for that table
+			var webFontUrl = new GlideRecord(table);
+	
+		//	var recordtable = ...
+	
+		//	var recordTableGR = new GlideRecord(...)
+	
+	
+		//get userid
+			webFontUrl.addQuery('user', gs.getUser().getID());
+		//initialize a new record
+			webFontUrl.initialize();
+		//set the value of that record
+			webFontUrl.setValue('Url', inserted_url);
+		//insert said record to the initialized record within the css dependency
+			webFontUrl.insert();
+		//update that glide record
+//	//	if (webFontUrl == webFontUrl.insert()){
+//		//then update another table that says that this user added this record
+	//	// recordTableGR...
+//	//	}
+			webFontUrl.update();
+			})();]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-18 17:43:52</sys_created_on>
+        <sys_id>e10adfad2f823010ec275e072799b6aa</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>insert_webfont_url</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>sys_script_include_e10adfad2f823010ec275e072799b6aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-18 19:15:56</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+//	c.splitJoinUrl = splitJoinUrl;
+	c.formData = {};
+	
+	newName = '';
+
+$scope.$watch('c.formData.portal', function(newVal){
+	console.log(c.formData.portal);
+});
+	
+	
+	
+	function selectPortal(portal){
+		console.log(portal);
+	
+		var id = portal.sys_id;
+		console.log(id);
+
+		var theme = portal.sp_theme;
+		c.data.id = id;
+		c.data.theme = theme;
+		
+	// *extra cred* you could make a business rule that
+	// authenticates the url that is pasted in the url field.		
+	}
+	
+//	var url = c.formData.url;
+	
+//	function urlLoop(url){
+		
+//		for (var i ; i < url.length; i++) {
+			
+//					var fontSubstring = url.substring(
+//				url.indexOf("family=") + 7,
+//				url.indexOf("&")
+				
+		//		formData.url.lastIndexOf("&")
+				
+//			)
+//			var fontNameSplit = fontSubstring.split(":");
+//				fontNameSplit.pop();	
+//			var	fontNameSplitJoin = fontNameSplit.join();		
+//			var fontNameSplit2 = fontNameSplitJoin.split("+");
+//			var fontNameSplitJoin2 = fontNameSplit2.join(" ");
+		
+//		  var newName = fontNameSplitJoin2;
+			
+			
+//		}
+		
+//	}
+	
+	
+//	c.createMetaSubstring = function(formData) {
+	
+//	}
+	
+	c.importUrl = function(formData) {
+		
+	//	console.log('c.importUrl portal Log: ' + typeof formData.portal);
+		var newName = '';
+		var metaSubstring = '';
+		var secondarySubstring = '';
+	//	for (var i; i < c.formData.url.length; i++) {
+//	 c.createMetaSubstring(formData);
+		
+		
+		var metaSubstringArray = []
+		var newSubstring = '';
+		
+	
+			if (c.formData.url.indexOf("family=")) {
+			metaSubstring = c.formData.url.substring(
+				c.formData.url.indexOf("family="),
+			//	c.formData.url.indexOf("&"),
+				c.formData.url.lastIndexOf("&")
+			)
+			}
+			for (var i; i < metaSubstring.length; i++) {
+				
+		//	if (metaSubstring[i] === '=') {
+			newSubstring = metaSubstring.split("=", "&")
+		//	}
+				
+				console.log("newSUBSTRING: " + newSubstring)
+				return newSubstring;
+		}
+			
+	//			$scope.$watch('secondarySubstring', function(newVal){
+	//		console.log("WATCH OUT FOR THE SECONDARY SUBSTRING: " + secondarySubstring);
+	//			});
+				
+	//			console.log("HEY THIS IS THE META SUBSTRINGS INDEX OF FAMILY: " + metaSubstring.indexOf("family="))
+	//		if (metaSubstring.indexOf("family=")) {
+	//			secondarySubstring = metaSubstring.substring(
+	//			metaSubstring.indexOf("family="), 
+	//			metaSubstring.indexOf("&")
+					
+//				)
+//		}
+			console.log("hey!");
+				
+	//		console.log("font-substring: " + fontSubstring);
+			
+		
+		
+		//-------------------------------------------
+//			if(metaSubstring.indexOf("=")) {
+//				var betaSubstring = metaSubstring.substring(
+//				metaSubstring.indexOf("=") + 1,
+//				metaSubstring.lastIndexOf(":")
+			//c.formData.url.lastIndexOf("&")
+//				)
+//				betaSubstring = betaSubstring;
+//				}
+//			var alphaSubstring = metaSubstring.substring(
+//			 0,
+//				metaSubstring.indexOf(":")
+//			)
+				console.log("this is the metaSubstring: " + metaSubstring);
+				console.log("this is the newSubstring: " + newSubstring);
+		
+			//-------------------------------------------
+				
+	//			console.log("beta substring: " + betaSubstring)
+				
+					
+	//		if(metaSubstring.indexOf(":"))
+	//		var alphaSubstring = metaSubstring.substring(
+	//		 0,
+	//			c.formData.url.indexOf(":")
+	//		c.formData.url.lastIndexOf("&")
+	//			)
+//			console.log("alpha substring: " + alphaSubstring)
+		//	var fontNameSplit = fontSubstring.split(":");
+
+			//	fontNameSplit.pop();	
+			
+	//		console.log("font-namesplit: " + fontNameSplit);
+	//		var	fontNameSplitJoin = fontNameSplit.join();		
+	//		console.log("font-namesplitJoin: " + fontNameSplitJoin);
+	//		var fontNameSplit2 = fontNameSplitJoin.split("+");
+	//		console.log("font-namesplit2: " + fontNameSplit2);
+	//		var fontNameSplitJoin2 = fontNameSplit2.join(" ");
+	//		console.log("font-namesplitJoin2: " + fontNameSplitJoin2);
+		
+	//	  newName = fontNameSplitJoin2
+	//		alphaSubstring + " " +
+//		}
+		
+		
+//			console.log("this is fontNameSPlit" + fontNameSplitJoin2);
+//			console.log("this is the url:" + formData.url)
+			
+		
+		
+		c.server.get({
+			action: 'importUrl',
+			formData: formData,
+			newName: newName
+		}).then(function(r){
+			c.data.portals.unshift(r.data.importUrl);
+			c.data.portalID = r.data.portalID;
+			
+		})
+	}
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.main-container {
+	display:flex;
+	flex-direction: row;
+	width: 600px;
+  color: #454547;
+}
+.main-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+	padding: 35px;
+  background-image: url("sab_left_1.png");
+	background-position: center;
+	background-size:cover;
+	flex: 1;
+}
+.right-container {
+  background-image: url("sab_right_2.png");
+  background-position: center;
+	background-size:cover;
+  padding: 35px;
+	flex:2;
+}
+.title-container {
+
+	display: flex;
+ // justify-content: center;
+	align-items: center;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size:20px;
+  font-familiy: Sora, sans-serif;
+  margin-bottom: 0px;
+  padding:0px;
+  
+}
+
+.sub-title {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin: 15 0 15 15;
+  padding: 0px;
+}
+
+.form-container {
+  display: flex;
+//  justify-content: space-evenly;
+//	align-items: space-evenly;
+  flex-direction: column;
+}
+
+.url-input-form {
+  justify-content: space-evenly;
+  display: flex;
+	align-items: space-evenly;
+  flex-direction: column;
+}
+
+.url-input-label {
+  font-size: 13px;
+  margin: 0;
+}
+
+.url-input {
+	height: 20px;
+}
+
+.portal-input-label {
+  font-size: 13px;
+}
+
+.portal-input {
+	height: 20px;
+
+}
+
+.portal-input-option {
+
+}
+
+.submit-button {
+  margin: 10px;
+}
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>webfont_url_dep</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>WebFont_url_dep</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	//
+
+	
+	data.portals = [];
+
+		var allThePortalsGR = new GlideRecord("sp_portal");
+		allThePortalsGR.orderByDesc("sys_created_on");
+		allThePortalsGR.query();
+	
+
+		while (allThePortalsGR.next()){
+		console.log('made it to while!');
+
+			var portalObj = {};
+			
+			portalObj.sys_id = allThePortalsGR.getUniqueValue();
+			portalObj.theme = allThePortalsGR.theme + '';
+			portalObj.title = allThePortalsGR.getValue("title");
+//			portalObj.cssDep = portalObj.title.getValue("m2m_sp_theme_css_include");
+			
+			data.portals.push(portalObj);
+			
+	}
+	
+	if(input){
+		if(input.action === 'importUrl'){
+			
+			var inputUrl = input.formData.url;
+			var name = input.formData.portalName;
+			var portalID = data.id;
+			var theme = input.formData.portal.theme;
+			var newUrlName = input.newName;
+			
+			console.log('theme:' + theme);
+			console.log(JSON.stringify(input));
+			console.log(inputUrl);
+			console.log("thisIsNewName: " + newUrlName);
+
+			
+			var spIncludeGR = new GlideRecord('sp_css_include');
+				spIncludeGR.initialize();
+				spIncludeGR.name = newUrlName + " (Google Web Font)" ;
+				spIncludeGR.url = inputUrl;
+				spIncludeGR.source = inputUrl;
+				var spIncludeGRID = spIncludeGR.insert();
+				
+			
+			var m2mThemeInclude = new GlideRecord('m2m_sp_theme_css_include');
+				m2mThemeInclude.initialize();
+				m2mThemeInclude.sp_css_include = spIncludeGRID;
+				m2mThemeInclude.sp_theme = theme;
+				m2mThemeInclude.url = inputUrl;
+				m2mThemeInclude.order = 10;
+				var m2mThemeIncludeID = m2mThemeInclude.insert();
+			
+			
+			
+			//---------------------------
+			//create new theme if the portal doesn't already have one-------
+	//		if (!theme) {
+
+	//		var spThemeGR = new GlideRecord('sp_theme');
+	//				spThemeGR.initialize();
+	//			  spThemeGR.css_includes = spIncludeGRID;
+	//				spThemeGR.name = "New Theme: "+ newUrlName;
+	//				spThemeGR.update();
+	//				var spThemeGRID = spThemeGR.insert();
+			
+		
+	//				m2mThemeIncludeID();
+				
+				
+	//			m2mThemeIncludeID = new GlideRecord('m2m_sp_theme_css_include');
+	//			m2mThemeInclude.initialize();
+	//			m2mThemeInclude.sp_css_include = spIncludeGRID;
+	//			m2mThemeInclude.sp_theme = theme;
+	//			m2mThemeInclude.url = inputUrl;
+	//			m2mThemeInclude.order = 10;
+	//		}
+			// ---------------------
+			
+		
+
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-18 17:20:13</sys_created_on>
+        <sys_id>07d9dbad2f823010ec275e072799b616</sys_id>
+        <sys_mod_count>679</sys_mod_count>
+        <sys_name>WebFont_url_dep</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>sp_widget_07d9dbad2f823010ec275e072799b616</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-07 20:24:35</sys_updated_on>
+        <template><![CDATA[<div class="main-container">
+  <div class="main-form-container">
+  <div class="title-container">
+    <h1 class="main-title" >
+    Webfont Quick Add
+  </h1>
+  	<h2 class="sub-title">
+    Quickly and swiftly add a webfont to your portal here! 
+    </h2>
+  </div>
+  <div class="form-container">
+    <form class="url-input-form" ng-submit="c.importUrl(c.formData)">
+    <label class="url-input-label">
+      Url:
+    </label>
+      <input class="url-input" type="text-field" ng-model="c.formData.url">
+     <label class="portal-input-label">
+      Portal:
+      </label>
+      <select class="portal-input" ng-options="portal as portal.title for portal in data.portals" ng-model="c.formData.portal" value="{{portal}}">
+ <option class="portal-input-option" value="" >- s e l e c t - p o r t a l -</option>
+      </select>
+      <button type="submit" class="submit-button">
+        s u b m i t
+      </button>  
+    </form>
+  </div>
+<!--  <div class="css-dependency-reveal-container">
+    <div class="dependency-card" ng-repeat="dep in portal.cssDep track by $index">
+      <p>
+        {{dep}}
+      </p>
+    </div>
+  </div> -->
+  <!--- POTENTIALLY SHOW THE USER WHAT OTHER CSS DEPENDENCIES ARE ON THIS THEME!--->
+</div>
+<div class="right-container">
+  
+  </div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>
