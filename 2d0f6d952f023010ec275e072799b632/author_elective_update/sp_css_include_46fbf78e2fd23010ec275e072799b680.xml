@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="DELETE">
+        <name>IBM Plex Sans Arabic (Google Web Font)</name>
+        <source>https://fonts.googleapis.com/css2?family</source>
+        <sp_css/>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-01 19:21:54</sys_created_on>
+        <sys_id>46fbf78e2fd23010ec275e072799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IBM Plex Sans Arabic (Google Web Font)</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>sp_css_include_46fbf78e2fd23010ec275e072799b680</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 19:21:54</sys_updated_on>
+        <url>https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&amp;display=swap</url>
+    </sp_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</application>
+        <file_path/>
+        <instance_id>9b4fa053db2e089052dd2f17d496193c</instance_id>
+        <instance_name>dev98323</instance_name>
+        <name>sp_css_include_46fbf78e2fd23010ec275e072799b680</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>IBM Plex Sans Arabic (Google Web Font)</name><source>https://fonts.googleapis.com/css2?family</source><sp_css/><sys_class_name>sp_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-01 19:21:54</sys_created_on><sys_id>46fbf78e2fd23010ec275e072799b680</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IBM Plex Sans Arabic (Google Web Font)</sys_name><sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package><sys_policy/><sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope><sys_update_name>sp_css_include_46fbf78e2fd23010ec275e072799b680</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-01 19:21:54</sys_updated_on><url>https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&amp;display=swap</url></sp_css_include></record_update>]]></payload>
+        <payload_hash>-296113641</payload_hash>
+        <record_name>IBM Plex Sans Arabic (Google Web Font)</record_name>
+        <reverted_from/>
+        <source>446761792f123010ec275e072799b6bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-01 19:21:54</sys_created_on>
+        <sys_id>c2fbf78e2fd23010ec275e072799b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ba2cf86c60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 19:21:54</sys_updated_on>
+        <type>CSS Include</type>
+        <update_guid>cafbf78e9ed230108c40080e8ae7df81</update_guid>
+        <update_guid_history>cafbf78e9ed230108c40080e8ae7df81:-296113641</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="IBM Plex Sans Arabic (Google Web Font)">353b81aa2fd23010ec275e072799b67c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-02 19:46:37</sys_created_on>
+        <sys_db_object display_value="" name="sp_css_include">sp_css_include</sys_db_object>
+        <sys_id>604955d0ff12424083d58abcb1d33440</sys_id>
+        <sys_metadata>46fbf78e2fd23010ec275e072799b680</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IBM Plex Sans Arabic (Google Web Font)</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_scope_delete display_value="">7852965362634401b169718d42db1d41</sys_scope_delete>
+        <sys_update_name>sp_css_include_46fbf78e2fd23010ec275e072799b680</sys_update_name>
+        <sys_update_version display_value="sp_css_include_46fbf78e2fd23010ec275e072799b680">c2fbf78e2fd23010ec275e072799b682</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-02 19:46:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

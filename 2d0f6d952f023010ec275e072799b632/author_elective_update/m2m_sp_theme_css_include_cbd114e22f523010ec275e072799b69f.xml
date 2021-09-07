@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
+    <m2m_sp_theme_css_include action="DELETE">
+        <order>10</order>
+        <sp_css_include display_value="undefined (Google Web Font)">4bd114e22f523010ec275e072799b69d</sp_css_include>
+        <sp_theme display_value="NewFunTheme">7664f34a2fd23010ec275e072799b6f8</sp_theme>
+        <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-02 15:36:02</sys_created_on>
+        <sys_id>cbd114e22f523010ec275e072799b69f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>undefined (Google Web Font).NewFunTheme</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>m2m_sp_theme_css_include_cbd114e22f523010ec275e072799b69f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-02 15:36:02</sys_updated_on>
+    </m2m_sp_theme_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</application>
+        <file_path/>
+        <instance_id>9b4fa053db2e089052dd2f17d496193c</instance_id>
+        <instance_name>dev98323</instance_name>
+        <name>m2m_sp_theme_css_include_cbd114e22f523010ec275e072799b69f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include"><m2m_sp_theme_css_include action="INSERT_OR_UPDATE"><order>10</order><sp_css_include display_value="undefined (Google Web Font)">4bd114e22f523010ec275e072799b69d</sp_css_include><sp_theme display_value="NewFunTheme">7664f34a2fd23010ec275e072799b6f8</sp_theme><sys_class_name>m2m_sp_theme_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-02 15:36:02</sys_created_on><sys_id>cbd114e22f523010ec275e072799b69f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>undefined (Google Web Font).NewFunTheme</sys_name><sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package><sys_policy/><sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope><sys_update_name>m2m_sp_theme_css_include_cbd114e22f523010ec275e072799b69f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-02 15:36:02</sys_updated_on></m2m_sp_theme_css_include></record_update>]]></payload>
+        <payload_hash>1527270372</payload_hash>
+        <record_name>undefined (Google Web Font).NewFunTheme</record_name>
+        <reverted_from/>
+        <source>446761792f123010ec275e072799b6bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-02 15:36:03</sys_created_on>
+        <sys_id>8bd114e22f523010ec275e072799b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ba7271ab40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-02 15:36:03</sys_updated_on>
+        <type>Stylesheets</type>
+        <update_guid>83d114e2d25230106dbac42e656815a1</update_guid>
+        <update_guid_history>83d114e2d25230106dbac42e656815a1:1527270372</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="undefined (Google Web Font).NewFunTheme">d12b01aa2fd23010ec275e072799b60c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-02 19:46:19</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_theme_css_include">m2m_sp_theme_css_include</sys_db_object>
+        <sys_id>530efc24c5be4fd4a633f989783b5f90</sys_id>
+        <sys_metadata>cbd114e22f523010ec275e072799b69f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>undefined (Google Web Font).NewFunTheme</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_scope_delete display_value="">7852965362634401b169718d42db1d41</sys_scope_delete>
+        <sys_update_name>m2m_sp_theme_css_include_cbd114e22f523010ec275e072799b69f</sys_update_name>
+        <sys_update_version display_value="m2m_sp_theme_css_include_cbd114e22f523010ec275e072799b69f">8bd114e22f523010ec275e072799b6a1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-02 19:46:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
