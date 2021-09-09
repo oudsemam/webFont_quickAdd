@@ -9,9 +9,9 @@
 	
 	newName = '';
 
-$scope.$watch('c.formData.portal', function(newVal){
-	console.log(c.formData.portal);
-});
+//$scope.$watch('c.formData', function(newVal){
+//	console.log(c.formData);
+//});
 	
 	
 	
@@ -28,19 +28,87 @@ $scope.$watch('c.formData.portal', function(newVal){
 	// *extra cred* you could make a business rule that
 	// authenticates the url that is pasted in the url field.		
 	}
-	
-//	var url = c.formData.url;
-	
-//	function urlLoop(url){
+
+	c.importUrl = function(formData) {
+		var newName = '';
+		var metaSubstring = '';
+		var newSubstringArray = '';
+		var nameArray = [];
+		var finalNameArray = [];
 		
-//		for (var i ; i < url.length; i++) {
+		
+//		console.log("THIS IS FORM DATA: "+ formData)
+		
+//================================================
+		// vv THIS FUNCTION vv TRIMS THE URL INTO THE BATCH OF 
+		// FONT FAMILY NAMES (FROM GOOGLE FONTS) THAT WE WILL  
+		// TRIM AND REFINE IN THE FOLLOWING FUNCTIONS
+	
+			if (c.formData.url.indexOf("family=")) {
+			metaSubstring = c.formData.url.substring(
+				c.formData.url.indexOf("family="),
+				c.formData.url.lastIndexOf("&") +1
+		)
 			
-//					var fontSubstring = url.substring(
-//				url.indexOf("family=") + 7,
-//				url.indexOf("&")
+				console.log("THIS IS THE METASUBSTRING: " + metaSubstring)
+			}
+	
+			newSubstringArray = metaSubstring.toString().split("family=")
+
 				
-		//		formData.url.lastIndexOf("&")
-				
+//				console.log("newSUBSTRING: " + newSubstringArray)
+		
+//================================================
+		// vv THIS FUNCTION vv IS TAKING THE NEWSUBSTRING ARRAY AND 
+		// REFINING IT DOWN INTO AN ARRAY OF OBJECTS THAT REFLECT
+		// THE NAMES OF EACH FONT WITHIN THE ORIGINAL URL
+		
+			for (var i=1; i < newSubstringArray.length; i++) {
+				var	theSubstringArray = newSubstringArray[i];		
+					if (newSubstringArray[i.length -1] === "&" || "") {
+						var theSubstringArraySplice =	theSubstringArray.splice(-1, 1)
+						nameArray.push(theSubstringArraySplice)
+						}
+//				console.log("THIS IS THE SUBSTRING ARRAY: " + theSubstringArray);
+					if(theSubstringArray.indexOf(":") > -1) {
+						var	newSubstringArraySplit = theSubstringArray.split(":");
+						var newSubstringArraySplitShift =	newSubstringArraySplit.shift();
+						nameArray.push(newSubstringArraySplitShift)
+//					console.log("NEW ARRAY: "+ newSubstringArraySplitShift);
+						} else {
+								var theSubstringAltSplit = theSubstringArray.split("&")
+								theSubstringAltSplit.pop()
+								var toString =	theSubstringAltSplit.toString()
+								nameArray.push(toString)
+							}	
+//				console.log("THE ULTIMATE SUBSTRING ARRAY: " + theSubstringArray)
+				console.log("THIS IS THE NAME ARRAY: " + nameArray)
+			}
+		
+//================================================
+		// vv THIS FUNCTION vv IS TAKING THE ARRAY OF OBJECTS FROM 
+		// THE ABOVE FUNCTION, AND IT IS TURNING IT INTO A STRING
+		// SEPERATED BY SPACES AND COMMAS.
+		
+		for (var e=0; e < nameArray.length; e++) {
+		//	var join = ''
+			if (nameArray[e].indexOf("+") > -1){
+				var split = nameArray[e].split("+");
+				var join = split.join(" ");
+				console.log("THIS IS JOIN: " + join)
+				finalNameArray.push(join);
+			}
+		var joined = finalNameArray.join(", ")
+		
+			console.log(joined);
+		}
+	//	console.log(finalNameArray);
+		
+		
+
+//	var fontSubstring = formData.url.substring(
+//				formData.url.indexOf("family=") + 7,
+//				formData.url.lastIndexOf("&")
 //			)
 //			var fontNameSplit = fontSubstring.split(":");
 //				fontNameSplit.pop();	
@@ -48,116 +116,17 @@ $scope.$watch('c.formData.portal', function(newVal){
 //			var fontNameSplit2 = fontNameSplitJoin.split("+");
 //			var fontNameSplitJoin2 = fontNameSplit2.join(" ");
 		
-//		  var newName = fontNameSplitJoin2;
-			
-			
-//		}
-		
-//	}
-	
-	
-//	c.createMetaSubstring = function(formData) {
-	
-//	}
-	
-	c.importUrl = function(formData) {
-		
-	//	console.log('c.importUrl portal Log: ' + typeof formData.portal);
-		var newName = '';
-		var metaSubstring = '';
-		var secondarySubstring = '';
-	//	for (var i; i < c.formData.url.length; i++) {
-//	 c.createMetaSubstring(formData);
-		
-		
-		var metaSubstringArray = []
-		var newSubstring = '';
-		
-	
-			if (c.formData.url.indexOf("family=")) {
-			metaSubstring = c.formData.url.substring(
-				c.formData.url.indexOf("family="),
-			//	c.formData.url.indexOf("&"),
-				c.formData.url.lastIndexOf("&")
-			)
-			}
-			for (var i; i < metaSubstring.length; i++) {
-				
-		//	if (metaSubstring[i] === '=') {
-			newSubstring = metaSubstring.split("=", "&")
-		//	}
-				
-				console.log("newSUBSTRING: " + newSubstring)
-				return newSubstring;
-		}
-			
-	//			$scope.$watch('secondarySubstring', function(newVal){
-	//		console.log("WATCH OUT FOR THE SECONDARY SUBSTRING: " + secondarySubstring);
-	//			});
-				
-	//			console.log("HEY THIS IS THE META SUBSTRINGS INDEX OF FAMILY: " + metaSubstring.indexOf("family="))
-	//		if (metaSubstring.indexOf("family=")) {
-	//			secondarySubstring = metaSubstring.substring(
-	//			metaSubstring.indexOf("family="), 
-	//			metaSubstring.indexOf("&")
-					
-//				)
-//		}
-			console.log("hey!");
-				
-	//		console.log("font-substring: " + fontSubstring);
-			
-		
-		
-		//-------------------------------------------
-//			if(metaSubstring.indexOf("=")) {
-//				var betaSubstring = metaSubstring.substring(
-//				metaSubstring.indexOf("=") + 1,
-//				metaSubstring.lastIndexOf(":")
-			//c.formData.url.lastIndexOf("&")
-//				)
-//				betaSubstring = betaSubstring;
-//				}
-//			var alphaSubstring = metaSubstring.substring(
-//			 0,
-//				metaSubstring.indexOf(":")
-//			)
-				console.log("this is the metaSubstring: " + metaSubstring);
-				console.log("this is the newSubstring: " + newSubstring);
-		
-			//-------------------------------------------
-				
-	//			console.log("beta substring: " + betaSubstring)
-				
-					
-	//		if(metaSubstring.indexOf(":"))
-	//		var alphaSubstring = metaSubstring.substring(
-	//		 0,
-	//			c.formData.url.indexOf(":")
-	//		c.formData.url.lastIndexOf("&")
-	//			)
-//			console.log("alpha substring: " + alphaSubstring)
-		//	var fontNameSplit = fontSubstring.split(":");
-
-			//	fontNameSplit.pop();	
-			
-	//		console.log("font-namesplit: " + fontNameSplit);
-	//		var	fontNameSplitJoin = fontNameSplit.join();		
-	//		console.log("font-namesplitJoin: " + fontNameSplitJoin);
-	//		var fontNameSplit2 = fontNameSplitJoin.split("+");
-	//		console.log("font-namesplit2: " + fontNameSplit2);
-	//		var fontNameSplitJoin2 = fontNameSplit2.join(" ");
-	//		console.log("font-namesplitJoin2: " + fontNameSplitJoin2);
-		
-	//	  newName = fontNameSplitJoin2
-	//		alphaSubstring + " " +
-//		}
-		
-		
 //			console.log("this is fontNameSPlit" + fontNameSplitJoin2);
 //			console.log("this is the url:" + formData.url)
 			
+	//	 newName = fontNameSplitJoin2;
+
+		//	console.log("font-namesplit: " + fontNameSplit);	
+		//	console.log("font-namesplitJoin: " + fontNameSplitJoin);
+		//	console.log("font-namesplit2: " + fontNameSplit2);
+		//	console.log("font-namesplitJoin2: " + fontNameSplitJoin2);
 		
+	//	  newName = fontNameSplitJoin2
 		
 		c.server.get({
 			action: 'importUrl',
@@ -169,8 +138,8 @@ $scope.$watch('c.formData.portal', function(newVal){
 			
 		})
 	}
-	
-}]]></client_script>
+}
+	]]></client_script>
         <controller_as>c</controller_as>
         <css>.main-container {
 	display:flex;
@@ -317,21 +286,21 @@ $scope.$watch('c.formData.portal', function(newVal){
 			console.log("thisIsNewName: " + newUrlName);
 
 			
-			var spIncludeGR = new GlideRecord('sp_css_include');
-				spIncludeGR.initialize();
-				spIncludeGR.name = newUrlName + " (Google Web Font)" ;
-				spIncludeGR.url = inputUrl;
-				spIncludeGR.source = inputUrl;
-				var spIncludeGRID = spIncludeGR.insert();
+//			var spIncludeGR = new GlideRecord('sp_css_include');
+//				spIncludeGR.initialize();
+//				spIncludeGR.name = newUrlName + " (Google Web Font)" ;
+//				spIncludeGR.url = inputUrl;
+//				spIncludeGR.source = inputUrl;
+//				var spIncludeGRID = spIncludeGR.insert();
 				
 			
-			var m2mThemeInclude = new GlideRecord('m2m_sp_theme_css_include');
-				m2mThemeInclude.initialize();
-				m2mThemeInclude.sp_css_include = spIncludeGRID;
-				m2mThemeInclude.sp_theme = theme;
-				m2mThemeInclude.url = inputUrl;
-				m2mThemeInclude.order = 10;
-				var m2mThemeIncludeID = m2mThemeInclude.insert();
+//			var m2mThemeInclude = new GlideRecord('m2m_sp_theme_css_include');
+//				m2mThemeInclude.initialize();
+//				m2mThemeInclude.sp_css_include = spIncludeGRID;
+//				m2mThemeInclude.sp_theme = theme;
+//				m2mThemeInclude.url = inputUrl;
+//				m2mThemeInclude.order = 10;
+//				var m2mThemeIncludeID = m2mThemeInclude.insert();
 			
 			
 			
@@ -369,14 +338,14 @@ $scope.$watch('c.formData.portal', function(newVal){
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-18 17:20:13</sys_created_on>
         <sys_id>07d9dbad2f823010ec275e072799b616</sys_id>
-        <sys_mod_count>679</sys_mod_count>
+        <sys_mod_count>874</sys_mod_count>
         <sys_name>WebFont_url_dep</sys_name>
         <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
         <sys_policy/>
         <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
         <sys_update_name>sp_widget_07d9dbad2f823010ec275e072799b616</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-07 20:24:35</sys_updated_on>
+        <sys_updated_on>2021-09-09 21:44:28</sys_updated_on>
         <template><![CDATA[<div class="main-container">
   <div class="main-form-container">
   <div class="title-container">
