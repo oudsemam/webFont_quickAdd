@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">d47ba90d2f623010ec275e072799b6c2</sp_column>
+        <sp_widget display_value="Add Webfont Url">3497ad852f063010ec275e072799b66e</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 16:32:16</sys_created_on>
+        <sys_id>b07b6d4d2f623010ec275e072799b6f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>sp_instance_b07b6d4d2f623010ec275e072799b6f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 16:32:16</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=b07b6d4d2f623010ec275e072799b6f4"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</application>
+        <file_path/>
+        <instance_id>9b4fa053db2e089052dd2f17d496193c</instance_id>
+        <instance_name>dev98323</instance_name>
+        <name>sp_instance_b07b6d4d2f623010ec275e072799b6f4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">d47ba90d2f623010ec275e072799b6c2</sp_column><sp_widget display_value="Add Webfont Url">3497ad852f063010ec275e072799b66e</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-10 16:32:16</sys_created_on><sys_id>b07b6d4d2f623010ec275e072799b6f4</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package><sys_policy/><sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope><sys_update_name>sp_instance_b07b6d4d2f623010ec275e072799b6f4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-10 16:32:16</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=b07b6d4d2f623010ec275e072799b6f4"/></record_update>]]></payload>
+        <payload_hash>1278727379</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a67c4e02f263010ec275e072799b612</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 16:32:16</sys_created_on>
+        <sys_id>817b6d4d2f623010ec275e072799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bd08d75430000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 16:32:16</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>897b6d4d876230105ae24f5f962995f6</update_guid>
+        <update_guid_history>897b6d4d876230105ae24f5f962995f6:1278727379</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c99b258d2f623010ec275e072799b6c7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 16:32:49</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>3241e4b30fdf46f2923cfaef004ed464</sys_id>
+        <sys_metadata>b07b6d4d2f623010ec275e072799b6f4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_scope_delete display_value="">7852965362634401b169718d42db1d41</sys_scope_delete>
+        <sys_update_name>sp_instance_b07b6d4d2f623010ec275e072799b6f4</sys_update_name>
+        <sys_update_version display_value="sp_instance_b07b6d4d2f623010ec275e072799b6f4">817b6d4d2f623010ec275e072799b6f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 16:32:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

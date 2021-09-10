@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Quick Add - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="css_webfont_quick_add">89a96d0d2f623010ec275e072799b6b9</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 16:31:11</sys_created_on>
+        <sys_id>c13b614d2f623010ec275e072799b654</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Quick Add - Container 2</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>sp_container_c13b614d2f623010ec275e072799b654</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 16:32:10</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</application>
+        <file_path/>
+        <instance_id>9b4fa053db2e089052dd2f17d496193c</instance_id>
+        <instance_name>dev98323</instance_name>
+        <name>sp_container_c13b614d2f623010ec275e072799b654</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Quick Add - Container 2</name><order>2</order><sp_page display_value="css_webfont_quick_add">89a96d0d2f623010ec275e072799b6b9</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-10 16:31:11</sys_created_on><sys_id>c13b614d2f623010ec275e072799b654</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Quick Add - Container 2</sys_name><sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package><sys_policy/><sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope><sys_update_name>sp_container_c13b614d2f623010ec275e072799b654</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-10 16:32:10</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>1280968259</payload_hash>
+        <record_name>Quick Add - Container 2</record_name>
+        <reverted_from/>
+        <source>1a67c4e02f263010ec275e072799b612</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 16:32:10</sys_created_on>
+        <sys_id>1b6be18d2f623010ec275e072799b612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bd08d5c840000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 16:32:10</sys_updated_on>
+        <type>Container</type>
+        <update_guid>1f6b6d0dab62301020c8582f92a6ff66</update_guid>
+        <update_guid_history>1f6b6d0dab62301020c8582f92a6ff66:1280968259,813b218da06230100c5a1aef7d3ffe4d:-180387260</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Quick Add - Container 2">99bb218d2f623010ec275e072799b677</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-10 16:33:24</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>1f780bde4db44f409ba06877f4e21000</sys_id>
+        <sys_metadata>c13b614d2f623010ec275e072799b654</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Quick Add - Container 2</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_scope_delete display_value="">7852965362634401b169718d42db1d41</sys_scope_delete>
+        <sys_update_name>sp_container_c13b614d2f623010ec275e072799b654</sys_update_name>
+        <sys_update_version display_value="sp_container_c13b614d2f623010ec275e072799b654">1b6be18d2f623010ec275e072799b612</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-10 16:33:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
