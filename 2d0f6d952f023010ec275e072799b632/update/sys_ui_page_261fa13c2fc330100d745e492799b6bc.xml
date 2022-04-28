@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_669416_imp_url_QuickAddFontWidgetLoader.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<body>
+		<iframe src="itsquickaddfont?id=css_webfont_quick_add"
+				width="100%"
+				height="100%"
+				style="boarder:none; overflow: auto;"></iframe>
+	</body>
+</j:jelly>]]></html>
+        <name>QuickAddFontWidgetLoader</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-04 18:43:10</sys_created_on>
+        <sys_id>261fa13c2fc330100d745e492799b6bc</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>QuickAddFontWidgetLoader</sys_name>
+        <sys_package display_value="import_url_css_dep" source="x_669416_imp_url">2d0f6d952f023010ec275e072799b632</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="import_url_css_dep">2d0f6d952f023010ec275e072799b632</sys_scope>
+        <sys_update_name>sys_ui_page_261fa13c2fc330100d745e492799b6bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-05 14:15:06</sys_updated_on>
+    </sys_ui_page>
+</record_update>
